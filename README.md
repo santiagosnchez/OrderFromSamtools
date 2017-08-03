@@ -25,4 +25,14 @@ Multiple BAM files can be processed in a loop.
 
 ## Running the script
 
-Run
+Run the program with the `-h` flag to have more details
+
+    perl OrderFromSamtools.pl -h
+    Try:
+    perl OrderFromSamtools.pl -indir /path/to/fastq/files
+                              -pattern fastq     [ or anything else present in all files ]
+                              -outdir alignments [ or anything else, your outfiles will be stored here ]
+                              -seqlist list.txt  [ a file with a list of sequence/gene names ]
+                              -addlab            [ optional, you can add some label tu your sequences by editing %spp ]
+
+
