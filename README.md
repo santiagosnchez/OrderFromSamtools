@@ -35,4 +35,18 @@ Run the program with the `-h` flag to have more details
                               -seqlist list.txt  [ a file with a list of sequence/gene names ]
                               -addlab            [ optional, you can add some label tu your sequences by editing %spp ]
 
+## Example
+
+    perl OrderFromSamtools.pl -indir /data/samtools/cns -pattern fastq -outdir alignments -seqlist my_genes.txt  
+
+You can edit the script directly to add/edit indivudal labels. You would need to go to `line 58` and edit the code.
+
+If the file is named something like this "1_sampleXXX". You can change the number to "spA_sampleXXX" with
+
+    1=>"spA"
+    2=>"spA"
+    3=>"spB"
+    ...
+
+If you are doing this, you will need to add the `-addlab` flag.
 
